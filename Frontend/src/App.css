@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+/* Left Panel */
+main .left {
+  background-color: #000000;
+  position: relative;
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+  padding: 1rem;
+  overflow: auto;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Review Button */
+main .left .review-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(219, 219, 255);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+  transition: 0.2s ease-in-out;
+}
+
+main .left .review-btn:hover {
+  background-color: #b2b2ff;
+}
+
+/* Right Panel */
+main .right {
+  background-color: #343434;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow: auto;
+  border-radius: 0.7rem;
+}
+
+main .right pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+main .right .error {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+main .right .warning {
+  color: #ffcc00;
+}
