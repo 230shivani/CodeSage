@@ -21,7 +21,7 @@ function App() {
 
   async function reviewCode() {
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+      const response = await axios.post('https://codesage-backend-17v7.onrender.com', { code })
       setReview(response.data)
     } catch (error) {
       setReview("❌ Error: Unable to fetch review. Please check backend server.")
